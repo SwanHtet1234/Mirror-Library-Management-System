@@ -1,0 +1,1633 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.logo {
+    font-family: 'Changa', sans-serif;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    /* margin: 0 30px; */
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.rightheaderbox {
+    display: flex;
+    align-items: center;
+    /* margin: 0 20px; */
+}
+
+.searchbox {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.342);
+    align-items: center;
+    user-select: none;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 25px;
+    transition: all ease 0.5s;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+.searchbox .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    user-select: none;
+}
+
+.searchbox:hover {
+    border-color: white;
+}
+
+.searchboxeffecton {
+    border-color: white;
+}
+
+.searchboxeffectoff{
+    border-color: transparent;
+}
+
+.searchbox input {
+    padding: 8px 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(223, 223, 223);
+    transition: all ease 0.5s;
+}
+
+.searchbox input::placeholder {
+    color: rgb(238, 238, 238);
+}
+
+.image img {
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid rgb(224, 224, 224);
+}
+
+.image {
+    margin-right: 25px;
+}
+
+.bell {
+    color: white;
+    font-size: 17px;
+    margin-right: 25px;
+}
+
+.logout {
+    font-size: 17px;
+    color: white;
+    margin-right: 5px;
+}
+
+.mainbox {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 85px);
+    padding: 20px 80px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+nav {
+    width: 120px;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 80px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 9px;
+    letter-spacing: 1px;
+    transition: all ease 0.5s;
+}
+
+ul li a:hover {
+    background-color: rgba(65, 64, 64, 0.356);
+    color: white;
+}
+
+nav ul li a i {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+nav ul li .current {
+    background-color: #b01415;
+    color: white;
+}
+
+.contentbox {
+    width: calc(100% - 120px);
+    height: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.numbercountbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.numbercountsmallbox {
+    width: 23%;
+    min-width: 225px;
+    margin-bottom: 10px;
+    background-color: #901616;
+    padding: 20px 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numbercountsmalllettopbox {
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.numbercountsmallleftbottombox {
+    font-size: 11px;
+    color: rgb(204, 204, 204);
+}
+
+.numbercountsmallrightbox {
+    font-size: 30px;
+    color: white;
+}
+
+.somethingbox {
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062);
+    margin-bottom: 30px;
+    background-image: url(../Images/Book_Cover/coves_poster.jpg);
+    background-repeat: none;
+    border: 5px solid #e03939;
+}
+
+.latestbookbox {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.582);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062);
+}
+
+.bookboxtitle {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    width: max-content;
+    text-transform: uppercase;
+}
+
+.bookboxtitle::after {
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #b01515;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.latestbookcontainbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.latestbooksmallbox {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    min-width: 168px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.171);
+    transition: all ease 0.5s;
+    margin-bottom: 30px;
+    background-color: white;
+    position: relative;
+}
+
+.latestbooksmallbox:hover {
+    transform: scale(0.98);
+}
+
+.statusbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.statusbox span {
+    transform: rotate(-45deg);
+}
+
+.latestbooksmallbox img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.booktitle {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+.author {
+    color: gray;
+    font-size: 13px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.addnewbookbox {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.addnewbookbox a {
+    text-decoration: none;
+    background-color: white;
+    padding: 5px 15px;
+    font-size: 13px;
+    color: #b12c2c;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062);
+    border: 1px solid white;
+    transition: all ease 0.5s;
+    margin-left: 10px;
+}
+
+.addnewbookbox a:hover {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    transform: scale(0.95);
+}
+
+.multiplesearchbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.multiplesearchbox1 {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.multiplesearchcolumn {
+    width: 24%;
+    margin-bottom: 20px;
+    min-width: 200px;
+}
+
+.multiplesearchcolumn input,
+.multiplesearchbox select,
+.multiplesearchcolumn button {
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 13px;
+}
+
+.multiplesearchcolumn input::placeholder {
+    color: white;
+}
+
+.filterbylogo {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: end;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.paginationbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.paginationbar {
+    display: flex;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.185);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.paginationbar a {
+    background-color: white;
+    color: #e03939;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-left: 1px solid rgba(128, 128, 128, 0.308);
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: all ease 0.4s;
+}
+
+.paginationbar a:first-child {
+    border-left: unset;
+}
+
+.paginationbar a:hover {
+    background-color: #e03939;
+    color: white;
+}
+
+.bookinformationbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookinformationleftbox {
+    min-width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: max-content;
+}
+
+.bookinformationleftbox img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bookinformationrightbox {
+    min-width: calc(100% - 320px);
+    max-width: calc(100% - 320px);
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookinformationsmallbox {
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.bookinformationtitle {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: -3px;
+}
+
+.bookinformationauthor {
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.bookinformationauthor span {
+    color: #e03939;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bookinformationgroup{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.bookinformationeachbox{
+    background-color: rgba(128, 128, 128, 0.288);
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 10px 10px 0;
+}
+
+.bookinformationeachbox i{
+    color: #d60d0d;
+}
+
+.bookinformationgenre {
+    display: flex;
+    font-size: 12px;
+    width: 100%;
+    color: gray;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.bookinformationgenre span {
+    margin-right: 10px;
+    min-width: max-content;
+}
+
+.bookinformationgenre .original {
+    margin-right: 10px;
+    color: black;
+}
+
+.bookinformationsummary {
+    min-width: 100%;
+    text-align: justify;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: grey;
+    font-weight: bold;
+}
+
+.bookinformationsummary p {
+    width: 100%;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.booksuggestionbox {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.booksuggestionboxtitle {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.booksuggestionsmallbox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.booksuggestionsmalleachbox {
+    width: 20%;
+    min-width: 135px;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.281);
+    overflow: hidden;
+    transition: all ease 0.5s;
+    text-decoration: none;
+    margin: 0 10px 10px 10px;
+}
+
+.booksuggestionsmalleachbox:hover {
+    transform: scale(0.98);
+}
+
+.booksuggestionsmalleachbox img {
+    width: 100%;
+    min-height: 207px;
+    object-fit: cover;
+}
+
+.booksuggestiontitle {
+    font-size: 9px;
+    color: black;
+    font-weight: bold;
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+
+.booksuggestionauthor {
+    color: gray;
+    font-size: 9px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 975px) {
+    .bookinformationbox {
+        flex-direction: column;
+        align-items: start;
+    }
+    .bookinformationleftbox {
+        width: 300px;
+    }
+    .bookinformationleftbox img {
+        margin-bottom: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .bookinformationrightbox {
+        min-width: unset;
+        max-width: unset;
+        width: 100%;
+        flex-direction: column;
+    }
+    .bookinformationrightbox .bookinformationsmallbox {
+        min-width: 100%;
+    }
+}
+
+@media(max-width: 1309px) {
+    .booksuggestionsmalleachbox {
+        width: 40%;
+    }
+}
+
+@media(max-width: 1010px) {
+    .paginationbar a:first-child,
+    .paginationbar a:last-child,
+    .paginationbar a:nth-child(3),
+    .paginationbar a:nth-child(4),
+    .paginationbar a:nth-child(5),
+    .paginationbar a:nth-child(6),
+    .paginationbar a:nth-child(7) {
+        display: none;
+    }
+    .paginationbar a {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 1170px) {
+    .multiplesearchcolumn {
+        width: 48%;
+    }
+}
+
+@media(max-width: 785px) {
+    .multiplesearchcolumn {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1260px) {
+    .numbercountsmallbox {
+        width: 47%;
+    }
+}
+
+@media(max-width: 996px) {
+    .numbercountbox {
+        justify-content: center;
+    }
+    .numbercountsmallbox {
+        width: 90%;
+    }
+    .somethingbox {
+        width: 90%;
+    }
+    .latestbookbox {
+        width: 90%;
+    }
+    .multiplesearchbox {
+        width: 90%;
+    }
+    .addnewbookbox {
+        width: 90%;
+    }
+    .filterbylogo {
+        width: 90%;
+    }
+}
+
+@media(max-width: 1500px) {
+    .logo {
+        font-size: 28px;
+    }
+    .searchbox input {
+        padding: 5px 5px;
+    }
+    .searchbox .icon {
+        padding: 5px 10px;
+    }
+    .image img {
+        width: 40px;
+        border: 2px solid rgb(224, 224, 224);
+    }
+    .bell {
+        font-size: 15px;
+    }
+    .logout {
+        font-size: 15px;
+    }
+}
+
+@media(min-width: 1500px) {
+    nav {
+        width: 180px;
+    }
+    nav ul li a {
+        width: 130px;
+        height: 110px;
+        border-radius: 30px;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    nav ul li a i {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .somethingbox {
+        margin-top: 10px;
+        min-height: 110px;
+    }
+    .addnewbookbox a {
+        padding: 6px 20px;
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 1457px) {
+    .latestbookcontainbox {
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .latestbooksmallbox {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media(min-width: 1913px) {
+    .latestbookcontainbox {
+        justify-content: center;
+    }
+    .latestbooksmallbox {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media(min-width: 1600px) {
+    .numbercountsmalllettopbox {
+        font-size: 30px;
+    }
+    .numbercountsmallleftbottombox {
+        font-size: 16px;
+    }
+    .numbercountsmallrightbox {
+        font-size: 35px;
+    }
+    .latestbooksmallbox {
+        min-width: 208px;
+    }
+    .latestbooksmallbox img {
+        height: 300px;
+    }
+    .booktitle {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .author {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .booksuggestiontitle,
+    .booksuggestionauthor {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 1360px) {
+    .latestbookbox {
+        align-items: center;
+    }
+    .latestbooksmallbox {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .latestbookcontainbox {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 724px) {
+    .addnewbookbox {
+        width: 100%;
+    }
+    .addnewbookbox a {
+        font-size: 10px;
+    }
+    .bookinformationleftbox {
+        min-width: unset;
+        max-width: unset;
+        width: 100%;
+    }
+}
+
+@media(max-width: 674px) {
+    .addnewbookbox {
+        flex-direction: column;
+        align-items: end;
+        width: 100%;
+    }
+    .addnewbookbox a {
+        width: 120px;
+        margin-bottom: 5px;
+    }
+}
+
+.memberlistbox{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.582);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px 50px;
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062);
+}
+
+.memberlist{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.memberlist tr td, .memberlist tr th{
+    padding: 10px 0;
+}
+
+.memberlist tr td{
+    text-align: center;
+}
+
+.memberlist tr td:last-child{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.memberlist tr td:last-child ul{
+    list-style: none;
+    position: absolute;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    top: 50px;
+    z-index: 120;
+    padding: 10px;
+    display: none;
+}
+
+.memberlist tr td:last-child ul.showaction{
+    display: block;
+}
+
+.memberlist tr td:last-child ul li{
+    width: 100%;
+}
+
+.memberlist tr td:last-child ul li a{
+    text-decoration: none;
+    transition: all ease 0.5s;
+    padding: 5px 20px;
+    min-width: max-content;
+    display: block;
+    border-radius: 5px;
+    color: black;
+    font-size: 12px;
+}
+
+.memberactionbtn{
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+
+.memberactionbtn:hover{
+    background-color: rgba(128, 128, 128, 0.411);
+}
+
+.addbookbigbox{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.582);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 50px 50px;
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.062);
+}
+
+.singleinputbox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.inputspan{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.inputspan strong{
+    color: #d60d0d;
+    font-size: 15px;
+}
+
+.singleinputbox input{
+    width: 100%;
+    color: gray;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.932);
+    transition: all ease 0.5s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
+}
+
+.singleinputbox input:focus{
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+}
+
+.singleinputbox textarea{
+    width: 100%;
+    height: 150px;
+    color: gray;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.932);
+    transition: all ease 0.5s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
+    resize: none;
+}
+
+.singleinputbox textarea:focus{
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+}
+
+.doubleinputbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.doubleinputbox .doubleinputsinglebox{
+    width: 48%;
+    min-width: 200px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    display: flex;
+}
+
+.doubleinputbox .doubleinputsinglebox:first-child{
+    margin-right: 10px;
+}
+
+.doubleinputbox .doubleinputsinglebox input, .doubleinputbox .doubleinputsinglebox select{
+    width: 100%;
+    color: gray;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.932);
+    transition: all ease 0.5s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
+}
+
+.doubleinputbox .doubleinputsinglebox input:focus, .doubleinputbox .doubleinputsinglebox select{
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+}
+
+.ratinglist i{
+    color: red;
+}
+
+#bookimg{
+    display: none;
+}
+
+.selectbookimg{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.selectbookimg label{
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.932);
+    transition: all ease 0.5s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
+    width: max-content;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 6px;
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.selectbookimg label:hover{
+    transform: scale(1.03);
+}
+
+.selectbookimg label:active{
+    color: #901616;
+}
+
+.multiplechoosebox{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+}
+
+.multiplechoosebtn{
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.932);
+    transition: all ease 0.5s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
+    width: max-content;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 6px;
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.multiplechoosebtn:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+}
+
+.multiplechoosebtn:active{
+    color: #901616;
+}
+
+.authorshowbox{
+    display: flex;
+    list-style: none;
+    margin-left: 15px;
+    
+    flex-wrap: wrap;
+}
+
+.authorshowbox li{
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.144);
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 100px;
+    margin: 5px;
+}
+
+.authorshowbox1{
+    display: flex;
+    list-style: none;
+    margin-left: 15px;
+    
+    flex-wrap: wrap;
+}
+
+.authorshowbox1 li{
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.144);
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    min-width: max-content;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.multiplechoosebigform{
+    position: absolute;
+    
+    background-color: rgba(255, 255, 255, 0.096);
+    z-index: 20;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+.multiplechooseform{
+    background-color: white;
+    width: 350px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+    display: flex;
+    flex-direction: column;
+}
+
+.multiplechooseformtitle{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.multiplechooseform select{
+    width: 100%;
+    color: gray;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.932);
+    transition: all ease 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+    margin-bottom: 30px;
+}
+
+.multiplechooseform select:focus{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+}
+
+.multiplechooseformuseraction{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.multiplechooseformuseractionbtn{
+    background-color: #b01415;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 7px;
+    transition: all ease 0.5s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.multiplechooseformuseractionbtn:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+    transform: scale(0.95);
+}
+
+.showmultiplechoosebigform{
+    width: 100%;
+    height: 100vh;
+}
+
+.hidemultiplechoosebigform{
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: rotate(180deg) scale(0);
+}
+
+.multiplechoosebigform1{
+    position: absolute;
+    
+    background-color: rgba(255, 255, 255, 0.096);
+    z-index: 20;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+.multiplechooseform1{
+    background-color: white;
+    width: 350px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+    display: flex;
+    flex-direction: column;
+}
+
+.multiplechooseformtitle1{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.multiplechooseform1 select{
+    width: 100%;
+    color: gray;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.932);
+    transition: all ease 0.5s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.24);
+    margin-bottom: 30px;
+}
+
+.multiplechooseform1 select:focus{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+}
+
+.multiplechooseformuseraction1{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.multiplechooseformuseractionbtn1{
+    background-color: #b01415;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 7px;
+    transition: all ease 0.5s;
+    user-select: none;
+    cursor: pointer;
+}
+
+.multiplechooseformuseractionbtn1:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+    transform: scale(0.95);
+}
+
+.addbooksubmit{
+    width: 100%;
+    background-color: #b01415;
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    transition: all ease 0.5s;
+}
+
+.addbooksubmit:hover{
+    transform: scale(0.98);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
+}
+
+@media(max-width: 839px){
+    .doubleinputbox{
+        flex-direction: column;
+    }
+
+    .doubleinputbox .doubleinputsinglebox{
+       min-width: unset;
+       width: 100%;
+    }
+    
+    .doubleinputbox .doubleinputsinglebox:first-child{
+        margin-right: unset;
+    }
+}
+
+.deletebigbox{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.096);
+    z-index: 20;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+
+
+.deletebox{
+    background-color: white;
+    padding: 20px 70px;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.349);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deletelogo {
+    position: absolute;
+    top: -50px;
+    font-size: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #d60d0d;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.062);
+}
+
+.deleteicon{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    transform: translateX(20px);
+    user-select: none;
+    cursor: pointer;
+}
+
+.deleteicon i{
+    transition: all ease 0.5s;
+}
+
+.deleteicon:hover i{
+    color: #e03939;
+    transform: scale(1.05);
+}
+
+.deletefirstline{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.deletesecondline, .deletethirdline{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: grey;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.deletethirdline{
+    margin-bottom: 20px;
+}
+
+.deleteactionbtn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+}
+
+.deletecancelbtn{
+    color: black;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 7px 15px;
+    transition: all ease 0.5s;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+    transform: translateX(20px);
+}
+
+.deletecancelbtn:hover{
+    background-color: rgba(128, 128, 128, 0.37);
+    color: white;
+}
+
+.deletebtn{
+    color: white;
+    background-color: #e03939;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 7px 15px;
+    transition: all ease 0.5s;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+    border: 1px solid white;
+    transform: translateX(20px);
+}
+
+.deletebtn:hover{
+    background-color: white;
+    color: #e03939;
+    border-color: #e03939;
+}
+
+.borrowbigbox{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.096);
+    z-index: 20;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: all ease 0.5s;
+}
+
+.borrowbookform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.borrowbookform input, .borrowbookform select{
+    width: 100%;
+    color: gray;
+    padding: 7px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.932);
+    transition: all ease 0.5s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.borrowbookform input:focus, .borrowbookform select:focus{
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+}
+
+.borrowbookform textarea{
+    width: 100%;
+    height: 100px;
+    color: gray;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.932);
+    transition: all ease 0.5s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
+    resize: none;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.borrowbookform textarea:focus{
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+}
+
+.borrowbookform button{
+    background-color: #d60d0d;
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: all ease 0.5s;
+}
+
+.borrowbookform button:hover{
+    background-color: #a11d1d;
+    transform: scale(0.98);
+}
+
+.borrowbox{
+    background-color: white;
+    padding: 20px 40px;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.349);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+    
+}
+
+@media(max-height: 580px){
+    .borrowbigbox{
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .borrowbox{
+        position: absolute;
+        top: 50px;
+    }
+}
+
+.loginbigbox{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.096);
+    z-index: 20;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transition: all ease 0.5s;
+}
+
+.loginbox{
+    background-color: white;
+    padding: 20px 40px;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.349);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    align-items: center;
+    
+}
+
+.loginlogo{
+    font-family: 'Changa', sans-serif;
+    font-size: 35px;
+    color: #d60d0d;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.loginbox input, .loginbox select{
+    width: 100%;
+    color: gray;
+    padding: 7px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.932);
+    transition: all ease 0.5s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.loginbox input:focus{
+    transform: scale(1.01);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.295);
+}
+
+.logintitle{
+    width: 100%;
+}
+
+.loginbox button{
+    background-color: #d60d0d;
+    color: white;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: all ease 0.5s;
+    width: 100%;
+}
+
+.loginbox button:hover{
+    background-color: #a11d1d;
+    transform: scale(0.98);
+}
